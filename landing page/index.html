@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 
-< html lang="en">
-
+<html lang="en">
 <head>
-      
-    < meta charset="UTF-8">
-    < meta http-equiv="X-UA-Compatible" content="IE-edge">
-    < meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title> My Portfolio  </title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu.css">
+  <title>Product Landing Page</title>
 </head>
-
 <body>
-
-    <h1> This is my Portfolio </h1>
-
+ <nav>
+   <div class="logo">Psí Dobroty</div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="#">Domů</a></li>
+       <li><a href="#"> O Nás </a></li>
+       <li><a href="#"> Produkty</a></li>
+       <li><a href="#"> Kontakty</a></li>
+       <button type="button"> Přihlášení </button>
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Domů</a>
+     <a href="#">O Nás</a>
+     <a href="#">Produkty</a>
+     <a href="#">Kontakty</a>
+     <a href="#"><button type="button"> Přihlášení</button> </a>
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1> Pochoutky pro Vaše čtyřnohé miláčky</h1>
+       <p> Kontaktujte nás pro vytvoření objednávky</p>
+       <button>KOUPIT</button>
+     </div>
+     <div class="column2">
+       
+     </div>
+   </div>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
 </body>
 
 </html>
